@@ -42,5 +42,40 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ensoma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/ensoma_stock/
+Ensoma is a privately held, clinical-stage genomic medicines company developing in vivo
+hematopoietic stem cell (HSC) engineering. Its platform pairs an off-the-shelf in vivo delivery
+system built on high-capacity virus-like particles that preferentially bind HSCs with a gene
+engineering toolkit spanning base editing and high-efficiency gene integration, carrying payloads
+of roughly 35 kilobases so that changes from single-base edits through multi-gene insertions can be
+made without ex vivo cell collection, manipulation, or transplant conditioning. Programs span
+genetic disease, immune disorders, and oncology, including EN-374 for X-linked chronic
+granulomatous disease.
+
+## No API surface
+
+An enrichment pass on 2026-08-04 probed `ensoma.com` for a machine-readable contract and found
+none. `api.ensoma.com` does not resolve. `/openapi.json`, `/openapi.yaml`, `/swagger.json`,
+`/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`, `/llms.txt`, and the `/.well-known/` set
+(`security.txt`, `openid-configuration`, `oauth-authorization-server`, `api-catalog`,
+`ai-plugin.json`, `agent-card.json`, `agent.json`) all returned 404. No first-party SDK exists on
+npm, PyPI, RubyGems, or Packagist. There is no developer portal, MCP server, or A2A agent card.
+
+Ensoma is a therapeutics R&D company, not an API provider. The full probe log, with HTTP status
+for every URL, is recorded under `x-contract-discovery` in `apis.yml`.
+
+The company's public technical output is open-source computational genomics and sequencing-pipeline
+code at [github.com/ensoma](https://github.com/ensoma) — bioinformatics tooling, not API clients.
+
+## Links
+
+- Website — https://ensoma.com/
+- Inside Ensoma — https://ensoma.com/inside-ensoma/
+- Our Science — https://ensoma.com/our-science/
+- Pipeline — https://ensoma.com/pipeline/
+- News — https://ensoma.com/news/
+- Careers — https://ensoma.com/careers/
+- Contact — https://ensoma.com/contact/
+- GitHub — https://github.com/ensoma
+- Terms of Use — https://ensoma.com/terms-of-use/
+- Privacy Policy — https://ensoma.com/privacy-policy/
+- Secondary market (Forge Global) — https://forgeglobal.com/ensoma_stock/

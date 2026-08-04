@@ -1,17 +1,39 @@
 aid: ensoma
 name: Ensoma
-description: 'Ensoma is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Ensoma is a privately held, clinical-stage genomic medicines company developing
+  in vivo hematopoietic stem cell (HSC) engineering. Its platform pairs an off-the-shelf
+  in vivo delivery system built on high-capacity virus-like particles that preferentially
+  bind HSCs with a gene engineering toolkit spanning base editing and high-efficiency
+  gene integration, carrying payloads of roughly 35 kilobases so that changes from single-base
+  edits through multi-gene insertions can be made without ex vivo cell collection, manipulation,
+  or transplant conditioning. The company is pursuing programs across genetic disease,
+  immune disorders, and oncology, including EN-374 for X-linked chronic granulomatous
+  disease, and is backed by 5AM Ventures, F-Prime Capital, RTW Investments, Alexandria
+  Venture Investments, Cormorant Asset Management, and the Bill & Melinda Gates Foundation.
+  Enrichment found no public developer API, developer portal, SDK, OpenAPI/GraphQL/AsyncAPI
+  contract, MCP server, or agent card — this is a therapeutics R&D company, not an API
+  provider. Its only public machine-readable output is open-source computational genomics
+  and sequencing-pipeline code published under its GitHub organization.'
+image: https://ensoma.com/wp-content/uploads/2021/02/ENS-Logomark-Final-color-341x341.png
 url: https://raw.githubusercontent.com/api-evangelist/ensoma/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+x-no-api-surface: true
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Biotechnology
+- Genomic Medicine
+- Gene Therapy
+- Cell Therapy
+- Life Sciences
+- Healthcare
+- Bioinformatics
+- Private Company
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +42,71 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://ensoma.com/
+- type: About
+  url: https://ensoma.com/inside-ensoma/
+- type: Science
+  url: https://ensoma.com/our-science/
+- type: Pipeline
+  url: https://ensoma.com/pipeline/
+- type: News
+  url: https://ensoma.com/news/
+- type: Careers
+  url: https://ensoma.com/careers/
+- type: Contact
+  url: https://ensoma.com/contact/
+- type: TermsOfService
+  url: https://ensoma.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://ensoma.com/privacy-policy/
+- type: GitHubOrganization
+  url: https://github.com/ensoma
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ensomabio
+- type: SecondaryMarket
   url: https://forgeglobal.com/ensoma_stock/
+- type: LLMsTxt
+  url: llms/ensoma-llms.txt
+- type: DomainSecurity
+  url: security/ensoma-domain-security.yml
+x-contract-discovery:
+  date: '2026-08-04'
+  method: probed
+  result: no-machine-readable-contract
+  hosts_probed:
+  - ensoma.com
+  notes: 'api.ensoma.com does not resolve (NXDOMAIN); no baseURL or OpenAPI servers[]
+    host exists to probe. ensoma.com is a WordPress marketing site.'
+  probes:
+  - {url: 'https://ensoma.com/openapi.json', status: 404}
+  - {url: 'https://ensoma.com/openapi.yaml', status: 404}
+  - {url: 'https://ensoma.com/swagger.json', status: 404}
+  - {url: 'https://ensoma.com/v1/openapi.json', status: 404}
+  - {url: 'https://ensoma.com/api-docs', status: 404}
+  - {url: 'https://ensoma.com/docs', status: 404}
+  - {url: 'https://ensoma.com/redoc', status: 404}
+  - {url: 'https://ensoma.com/llms.txt', status: 404}
+  - {url: 'https://ensoma.com/.well-known/security.txt', status: 404}
+  - {url: 'https://ensoma.com/.well-known/openid-configuration', status: 404}
+  - {url: 'https://ensoma.com/.well-known/oauth-authorization-server', status: 404}
+  - {url: 'https://ensoma.com/.well-known/api-catalog', status: 404}
+  - {url: 'https://ensoma.com/.well-known/ai-plugin.json', status: 404}
+  - {url: 'https://ensoma.com/.well-known/agent-card.json', status: 404}
+  - {url: 'https://ensoma.com/.well-known/agent.json', status: 404}
+  observed:
+  - {url: 'https://ensoma.com/wp-json/', status: 200, note: 'Default WordPress REST
+      API on the marketing CMS. Not a product API, not documented, and not offered
+      to developers — recorded for provenance only, deliberately NOT catalogued as
+      an API.'}
+  registries_probed:
+  - {registry: npm, query: ensoma, result: none}
+  - {registry: npm, query: '@ensoma/sdk', result: none}
+  - {registry: pypi, query: ensoma, result: 'unrelated third-party package (taskwarrior
+      sync tool) — not first-party'}
+  - {registry: rubygems, query: ensoma, result: none}
+  - {registry: packagist, query: ensoma/ensoma, result: none}
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
