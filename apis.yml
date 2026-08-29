@@ -14,6 +14,17 @@ description: 'Ensoma is a privately held, clinical-stage genomic medicines compa
   contract, MCP server, or agent card — this is a therapeutics R&D company, not an API
   provider. Its only public machine-readable output is open-source computational genomics
   and sequencing-pipeline code published under its GitHub organization.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://ensoma.com/wp-content/uploads/2021/02/ENS-Logomark-Final-color-341x341.png
 url: https://raw.githubusercontent.com/api-evangelist/ensoma/refs/heads/main/apis.yml
 x-type: company
