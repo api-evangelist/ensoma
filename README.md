@@ -64,40 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ensoma is a privately held, clinical-stage genomic medicines company developing in vivo
-hematopoietic stem cell (HSC) engineering. Its platform pairs an off-the-shelf in vivo delivery
-system built on high-capacity virus-like particles that preferentially bind HSCs with a gene
-engineering toolkit spanning base editing and high-efficiency gene integration, carrying payloads
-of roughly 35 kilobases so that changes from single-base edits through multi-gene insertions can be
-made without ex vivo cell collection, manipulation, or transplant conditioning. Programs span
-genetic disease, immune disorders, and oncology, including EN-374 for X-linked chronic
-granulomatous disease.
+Ensoma is a privately held, clinical-stage genomic medicines company developing in vivo hematopoietic stem cell (HSC) engineering. Its platform pairs an off-the-shelf in vivo delivery system built on high-capacity virus-like particles that preferentially bind HSCs with a gene engineering toolkit spanning base editing and high-efficiency gene integration, carrying payloads of roughly 35 kilobases so that changes from single-base edits through multi-gene insertions can be made without ex vivo cell collection, manipulation, or transplant conditioning. The company is pursuing programs across genetic disease, immune disorders, and oncology, including EN-374 for X-linked chronic granulomatous disease, and is backed by 5AM Ventures, F-Prime Capital, RTW Investments, Alexandria Venture Investments, Cormorant Asset Management, and the Bill & Melinda Gates Foundation. Enrichment found no public developer API, developer portal, SDK, OpenAPI/GraphQL/AsyncAPI contract, MCP server, or agent card — this is a therapeutics R&D company, not an API provider. Its only public machine-readable output is open-source computational genomics and sequencing-pipeline code published under its GitHub organization.
 
-## No API surface
+**Areas:** Company · Biotechnology · Genomic Medicine · Gene Therapy · Cell Therapy · Life Sciences · Healthcare · Bioinformatics · Private Company
 
-An enrichment pass on 2026-08-04 probed `ensoma.com` for a machine-readable contract and found
-none. `api.ensoma.com` does not resolve. `/openapi.json`, `/openapi.yaml`, `/swagger.json`,
-`/v1/openapi.json`, `/api-docs`, `/docs`, `/redoc`, `/llms.txt`, and the `/.well-known/` set
-(`security.txt`, `openid-configuration`, `oauth-authorization-server`, `api-catalog`,
-`ai-plugin.json`, `agent-card.json`, `agent.json`) all returned 404. No first-party SDK exists on
-npm, PyPI, RubyGems, or Packagist. There is no developer portal, MCP server, or A2A agent card.
+## Ensoma on APIs.io
 
-Ensoma is a therapeutics R&D company, not an API provider. The full probe log, with HTTP status
-for every URL, is recorded under `x-contract-discovery` in `apis.yml`.
+Everything profiled for Ensoma is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ensoma/](https://apis.io/providers/ensoma/)** — or go straight to one of the APIs or properties below.
 
-The company's public technical output is open-source computational genomics and sequencing-pipeline
-code at [github.com/ensoma](https://github.com/ensoma) — bioinformatics tooling, not API clients.
+### Published properties
 
-## Links
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Website — https://ensoma.com/
-- Inside Ensoma — https://ensoma.com/inside-ensoma/
-- Our Science — https://ensoma.com/our-science/
-- Pipeline — https://ensoma.com/pipeline/
-- News — https://ensoma.com/news/
-- Careers — https://ensoma.com/careers/
-- Contact — https://ensoma.com/contact/
-- GitHub — https://github.com/ensoma
-- Terms of Use — https://ensoma.com/terms-of-use/
-- Privacy Policy — https://ensoma.com/privacy-policy/
-- Secondary market (Forge Global) — https://forgeglobal.com/ensoma_stock/
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ensoma Domain Security](https://apis.io/security/ensoma/ensoma-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://ensoma.com/)
+- [Terms of service](https://ensoma.com/terms-of-use/)
+- [Privacy policy](https://ensoma.com/privacy-policy/)
+- [GitHub](https://github.com/ensoma)
+
+## API Evangelist rating
+
+**Kin Score 9.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ensoma/](https://apis.io/providers/ensoma/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ensoma: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ensoma/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
